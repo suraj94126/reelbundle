@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luxury Reels - Get 10X More Reach in 30 Days</title>
+    <meta name="description" content="Join 10,247+ businesses using luxury reels to generate ₹50,000+ monthly. Only ₹199 today!">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Wistia Embed Script -->
+    <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        /* Gradient Animation */
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+        
+        /* Button Shine Effect */
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .btn-gold {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(90deg, #f59e0b, #f97316, #f59e0b);
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+            color: #000;
+            font-weight: 900;
+            padding: 1.5rem 3rem;
+            border-radius: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 20px 40px rgba(251, 191, 36, 0.3);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .btn-gold:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(251, 191, 36, 0.6);
+        }
+        
+        .btn-gold::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transform: translateX(-100%);
+            animation: shine 2s infinite;
+        }
+        
+        /* Pulse Animation */
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.9; transform: scale(1.02); }
+        }
+        
+        .pulse-slow {
+            animation: pulse-slow 3s ease-in-out infinite;
+        }
+        
+        /* Fade In */
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fade-in 0.6s ease-out forwards;
+        }
+        
+        /* Slide Down */
+        @keyframes slide-down {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .slide-down {
+            animation: slide-down 0.5s ease-out;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #0f0f0f; }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #fbbf24, #fb923c);
+            border-radius: 10px;
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        /* Wistia Responsive */
+        .wistia_responsive_padding {
+            padding: 56.25% 0 0 0;
+            position: relative;
+        }
+        .wistia_responsive_wrapper {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        /* Mobile specific */
+        @media (max-width: 768px) {
+            ::-webkit-scrollbar { display: none; }
+            .btn-gold {
+                padding: 1.25rem 2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Top Banner -->
+    <div id="topBanner" class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-red-600 via-orange-500 to-red-600 text-white py-2 px-4 text-center slide-down">
+        <div class="flex items-center justify-center gap-2 text-sm md:text-base font-semibold">
+            <span>⚡ 🔥 FLASH SALE: 97% OFF Ends Today! Only <span id="spotsLeftTop">31</span> Spots Left</span>
+            <button onclick="this.parentElement.parentElement.style.display='none'" class="ml-4 hover:text-gray-200 text-xl">×</button>
+        </div>
+    </div>
+
+    <!-- Sticky Bottom Bar -->
+    <div id="stickyBar" style="display: none;" class="fixed bottom-0 left-0 right-0 z-40 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 text-black py-4 px-4 shadow-2xl">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-center md:text-left">
+                <p class="font-bold text-lg">Don't Miss Out! Only <span class="spotsLeft">31</span> Spots Left</p>
+                <p class="text-sm">Join 10,000+ successful businesses today</p>
+            </div>
+            <a href="https://pages.razorpay.com/luxaryreels" class="btn-gold w-full md:w-auto" style="padding: 1rem 2rem;">
+                Claim Your Spot Now →
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-8 md:py-12" style="padding-top: 4rem; max-width: 1280px;">
+        
+        <!-- Trust Badges -->
+        <div class="flex flex-wrap justify-center items-center gap-6 mb-8 pb-8" style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+            <div class="flex items-center gap-2 text-sm">
+                <span style="color: #4ade80;">✓</span>
+                <span style="color: #d1d5db;">60-Day Money Back</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+                <span style="color: #4ade80;">✓</span>
+                <span style="color: #d1d5db;">Secure Payment</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+                <span style="color: #4ade80;">✓</span>
+                <span style="color: #d1d5db;">Award Winning</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+                <span style="color: #4ade80;">✓</span>
+                <span style="color: #d1d5db;">10,000+ Customers</span>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="text-center mb-16">
+            <div style="display: inline-block; margin-bottom: 1rem; padding: 0.5rem 1rem; background: linear-gradient(90deg, rgba(245,158,11,0.2), rgba(249,115,22,0.2)); border: 1px solid rgba(245,158,11,0.3); border-radius: 9999px;">
+                <span style="color: #fbbf24; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em;">
+                    ⚡ Limited Time Offer - 97% OFF Today Only
+                </span>
+            </div>
+
+            <h1 style="font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem; line-height: 1.1;">
+                <span style="background: linear-gradient(90deg, #fcd34d, #fb923c, #fcd34d); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;" class="animate-gradient">
+                    Get 10X More Clients
+                </span>
+                <br>
+                <span style="color: #fff;">in 30 Days with</span>
+                <br>
+                <span style="background: linear-gradient(90deg, #c084fc, #ec4899, #c084fc); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;" class="animate-gradient">
+                    Luxury Reels That Convert
+                </span>
+            </h1>
+
+            <p style="font-size: 1.25rem; color: #d1d5db; margin-bottom: 2rem; max-width: 56rem; margin-left: auto; margin-right: auto; line-height: 1.75;">
+                Join 10,247+ successful businesses using our <span style="color: #fbbf24; font-weight: 700;">proven luxury reels</span> to skyrocket engagement by 327%, book more clients, and generate <span style="color: #4ade80; font-weight: 700;">₹50,000+ monthly revenue</span>
+            </p>
+
+            <!-- Stats Grid -->
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 3rem; max-width: 80rem; margin-left: auto; margin-right: auto;">
+                <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.75rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="font-size: 2rem; font-weight: 900; color: #fbbf24; margin-bottom: 0.5rem;">10,247+</div>
+                    <div style="font-size: 0.875rem; color: #9ca3af;">Happy Customers</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.75rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="font-size: 2rem; font-weight: 900; color: #fbbf24; margin-bottom: 0.5rem;">327%</div>
+                    <div style="font-size: 0.875rem; color: #9ca3af;">Avg. Engagement</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.75rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="font-size: 2rem; font-weight: 900; color: #fbbf24; margin-bottom: 0.5rem;">₹50K+</div>
+                    <div style="font-size: 0.875rem; color: #9ca3af;">Monthly Revenue</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); border-radius: 0.75rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="font-size: 2rem; font-weight: 900; color: #fbbf24; margin-bottom: 0.5rem;">4.9★</div>
+                    <div style="font-size: 0.875rem; color: #9ca3af;">Rating</div>
+                </div>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div style="background: linear-gradient(90deg, rgba(220,38,38,0.2), rgba(249,115,22,0.2), rgba(220,38,38,0.2)); border: 2px solid rgba(239,68,68,0.5); border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem; max-width: 48rem; margin-left: auto; margin-right: auto; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);" class="pulse-slow">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem;">
+                    <span style="color: #f87171; font-weight: 700; font-size: 1.125rem; text-transform: uppercase; letter-spacing: 0.05em;">⚠️ Offer Expires In:</span>
+                </div>
+                <div style="display: flex; justify-content: center; gap: 1rem; text-align: center;">
+                    <div style="background: rgba(0,0,0,0.5); border-radius: 0.75rem; padding: 1rem; min-width: 80px; border: 1px solid rgba(239,68,68,0.3);">
+                        <div id="hours" style="font-size: 2.5rem; font-weight: 900; color: #f87171; margin-bottom: 0.25rem;">04</div>
+                        <div style="font-size: 0.75rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em;">Hours</div>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.5); border-radius: 0.75rem; padding: 1rem; min-width: 80px; border: 1px solid rgba(239,68,68,0.3);">
+                        <div id="minutes" style="font-size: 2.5rem; font-weight: 900; color: #f87171; margin-bottom: 0.25rem;">27</div>
+                        <div style="font-size: 0.75rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em;">Minutes</div>
+                    </div>
+                    <div style="background: rgba(0,0,0,0.5); border-radius: 0.75rem; padding: 1rem; min-width: 80px; border: 1px solid rgba(239,68,68,0.3);">
+                        <div id="seconds" style="font-size: 2.5rem; font-weight: 900; color: #f87171; margin-bottom: 0.25rem;">45</div>
+                        <div style="font-size: 0.75rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.05em;">Seconds</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scarcity Bar -->
+            <div style="background: linear-gradient(90deg, rgba(127,29,29,0.3), rgba(154,52,18,0.3)); border: 1px solid rgba(239,68,68,0.3); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem; max-width: 42rem; margin-left: auto; margin-right: auto;">
+                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+                    <span style="color: #f87171; font-weight: 700;">🔥 Spots Filling Fast!</span>
+                    <span style="color: #fbbf24; font-weight: 900; font-size: 1.25rem;"><span class="spotsLeft">31</span> Left</span>
+                </div>
+                <div style="width: 100%; background: #1f2937; border-radius: 9999px; height: 1rem; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #ef4444, #f97316, #fbbf24); height: 100%; border-radius: 9999px; width: 62%; transition: all 0.5s;"></div>
+                </div>
+                <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.5rem; text-align: center;">
+                    Limited to 50 clients this month • 19 already claimed
+                </p>
+            </div>
+
+            <!-- Primary CTA -->
+            <a href="https://pages.razorpay.com/luxaryreels" class="btn-gold" style="font-size: 1.5rem; margin-bottom: 1rem;">
+                <span>✨</span>
+                <span>Get Instant Access Now</span>
+                <span>→</span>
+            </a>
+
+            <p style="font-size: 0.875rem; color: #9ca3af; margin-bottom: 1.5rem;">
+                ✅ Instant Delivery • ✅ 60-Day Money-Back Guarantee • ✅ Lifetime Updates
+            </p>
+
+            <!-- Pricing -->
+            <div style="background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.1)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 2rem; max-width: 36rem; margin-left: auto; margin-right: auto; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1rem;">
+                    <span style="font-size: 1.875rem; color: #6b7280; text-decoration: line-through;">₹6,999</span>
+                    <span style="background: linear-gradient(90deg, #dc2626, #f97316); color: #fff; padding: 0.5rem 1rem; border-radius: 9999px; font-weight: 700; font-size: 1.125rem;" class="pulse-slow">97% OFF</span>
+                </div>
+                <div style="font-size: 3.75rem; font-weight: 900; background: linear-gradient(90deg, #fbbf24, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.5rem;">₹199</div>
+                <p style="color: #9ca3af; font-size: 0.875rem;">One-time payment • No hidden fees • Lifetime access</p>
+                <p style="color: #4ade80; font-weight: 700; font-size: 1.125rem; margin-top: 0.75rem;">🎉 INSANE VALUE - Less than a coffee!</p>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section style="margin-bottom: 5rem;">
+            <div style="max-width: 80rem; margin-left: auto; margin-right: auto;">
+                <h2 style="font-size: 2.5rem; font-weight: 900; text-align: center; margin-bottom: 1rem;">
+                    <span style="background: linear-gradient(90deg, #c084fc, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                        See What's Inside
+                    </span>
+                </h2>
+                <p style="font-size: 1.25rem; color: #9ca3af; text-align: center; margin-bottom: 2rem;">
+                    Watch this quick video to see the actual luxury reels folder and everything you'll get
+                </p>
+                <div style="position: relative; border-radius: 1rem; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); border: 2px solid rgba(168,85,247,0.3);">
+                    <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+                        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+                            <div class="wistia_embed wistia_async_85ij4qzote videoFoam=true" style="height:100%;position:relative;width:100%;">
+                                <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                                    <img src="https://fast.wistia.com/embed/medias/85ij4qzote/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" onload="this.parentNode.style.opacity=1;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://pages.razorpay.com/luxaryreels" class="btn-gold" style="font-size: 1.25rem;">
+                        <span>I Want This Now - Only ₹199!</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section style="margin-bottom: 5rem;">
+            <h2 style="font-size: 2.5rem; font-weight: 900; text-align: center; margin-bottom: 1rem;">
+                <span style="background: linear-gradient(90deg, #fbbf24, #f97316); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Real Results</span> from Real Businesses
+            </h2>
+            <p style="font-size: 1.25rem; color: #9ca3af; text-align: center; margin-bottom: 3rem;">
+                Join 10,247+ happy customers already crushing it with luxury reels
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 90rem; margin-left: auto; margin-right: auto;">
+                <!-- Testimonial 1 -->
+                <div style="background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+                    <p style="color: #e5e7eb; font-size: 1.125rem; margin-bottom: 1.5rem; line-height: 1.75; font-weight: 500;">
+                        "Increased my Instagram engagement by 425% in just 2 weeks! Orders tripled."
+                    </p>
+                    <div style="display: inline-block; background: rgba(34,197,94,0.2); border: 1px solid rgba(34,197,94,0.3); border-radius: 9999px; padding: 0.5rem 1rem; margin-bottom: 1.5rem;">
+                        <p style="color: #4ade80; font-weight: 700; font-size: 0.875rem;">💰 ₹2.3L+ monthly</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="font-size: 2.5rem;">👩‍💼</div>
+                        <div>
+                            <p style="font-weight: 700; color: #fff;">Ananya Sharma</p>
+                            <p style="font-size: 0.875rem; color: #9ca3af;">Fashion Boutique Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div style="background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+                    <p style="color: #e5e7eb; font-size: 1.125rem; margin-bottom: 1.5rem; line-height: 1.75; font-weight: 500;">
+                        "These reels converted 23% of viewers into customers. ROI was 15X investment!"
+                    </p>
+                    <div style="display: inline-block; background: rgba(34,197,94,0.2); border: 1px solid rgba(34,197,94,0.3); border-radius: 9999px; padding: 0.5rem 1rem; margin-bottom: 1.5rem;">
+                        <p style="color: #4ade80; font-weight: 700; font-size: 0.875rem;">💰 ₹8.5L+ monthly</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="font-size: 2.5rem;">👨‍💼</div>
+                        <div>
+                            <p style="font-weight: 700; color: #fff;">Vikram Patel</p>
+                            <p style="font-size: 0.875rem; color: #9ca3af;">Jewelry Brand</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div style="background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05)); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: 1rem; padding: 1.5rem; transition: all 0.3s;">
+                    <div style="color: #fbbf24; margin-bottom: 1rem;">★★★★★</div>
+                    <p style="color: #e5e7eb; font-size: 1.125rem; margin-bottom: 1.5rem; line-height: 1.75; font-weight: 500;">
+                        "Booked solid for 3 months straight. Best marketing decision I've ever made!"
+                    </p>
+                    <div style="display: inline-block; background: rgba(34,197,94,0.2); border: 1px solid rgba(34,197,94,0.3); border-radius: 9999px; padding: 0.5rem 1rem; margin-bottom: 1.5rem;">
+                        <p style="color: #4ade80; font-weight: 700; font-size: 0.875rem;">💰 ₹1.8L+ monthly</p>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="font-size: 2.5rem;">👩‍🎨</div>
+                        <div>
+                            <p style="font-weight: 700; color: #fff;">Meera Singh</p>
+                            <p style="font-size: 0.875rem; color: #9ca3af;">Luxury Salon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Money-Back Guarantee -->
+        <section style="margin-bottom: 5rem;">
+            <div style="max-width: 64rem; margin-left: auto; margin-right: auto; background: linear-gradient(135deg, rgba(6,95,70,0.2), rgba(6,78,59,0.2)); border: 2px solid rgba(34,197,94,0.5); border-radius: 1.5rem; padding: 3rem; text-align: center;">
+                <div style="display: inline-block; background: #22c55e; color: #fff; border-radius: 9999px; padding: 1rem; margin-bottom: 1.5rem;">
+                    <span style="font-size: 3rem;">🛡️</span>
+                </div>
+                <h2 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1.5rem; color: #fff;">
+                    100% Risk-Free<br>
+                    <span style="color: #4ade80;">60-Day Money-Back Guarantee</span>
+                </h2>
+                <p style="font-size: 1.25rem; color: #d1d5db; margin-bottom: 2rem; line-height: 1.75;">
+                    Try our luxury reels for 60 days. If you don't see a <span style="color: #4ade80; font-weight: 700;">dramatic increase in engagement, bookings, and revenue</span>, we'll refund every penny. No questions asked.
+                </p>
+                <p style="font-size: 1.5rem; color: #fff; font-weight: 700; margin-bottom: 1.5rem;">
+                    That's just ₹3.30 per day to transform your business!
+                </p>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section style="margin-bottom: 5rem;">
+            <div style="max-width: 64rem; margin-left: auto; margin-right: auto; text-align: center; background: linear-gradient(135deg, rgba(245,158,11,0.2), rgba(249,115,22,0.2)); border: 2px solid rgba(245,158,11,0.5); border-radius: 1.5rem; padding: 3rem;">
+                <h2 style="font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem; line-height: 1.1;">
+                    Ready to <span style="background: linear-gradient(90deg, #fcd34d, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">10X Your Business</span> with Luxury Reels?
+                </h2>
+                
+                <p style="font-size: 1.5rem; color: #e5e7eb; margin-bottom: 2rem;">
+                    Join 10,247+ successful businesses already generating ₹50,000+ monthly with our proven system
+                </p>
+
+                <a href="https://pages.razorpay.com/luxaryreels" class="btn-gold" style="font-size: 1.5rem; margin-bottom: 1.5rem;">
+                    <span>✨</span>
+                    <span>Yes! I Want This For Only ₹199</span>
+                    <span>→</span>
+                </a>
+
+                <p style="font-size: 0.875rem; color: #9ca3af; margin-bottom: 1.5rem;">
+                    🔒 Secure checkout • 💳 All payment methods accepted
+                </p>
+
+                <div style="margin-top: 1rem;">
+                    <p style="color: #f87171; font-weight: 700; font-size: 1.125rem;" class="pulse-slow">
+                        ⚠️ Only <span class="spotsLeft">31</span> spots remaining • Offer expires soon
+                    </p>
+                    <p style="color: #d1d5db; margin-top: 0.5rem;">
+                        <strong>Don't wait!</strong> Last month we sold out in 6 hours. Secure your spot now before it's gone.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; color: #6b7280; font-size: 0.875rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <p>© 2026 Luxury Reels. All rights reserved.</p>
+            <p style="margin-top: 0.5rem;">Secure payment powered by Razorpay</p>
+        </footer>
+    </div>
+
+    <!-- Exit Popup -->
+    <div id="exitPopup" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); backdrop-filter: blur(10px); align-items: center; justify-content: center; z-index: 60; padding: 1rem;">
+        <div style="background: linear-gradient(135deg, #1f2937, #000); border: 2px solid #fbbf24; border-radius: 1.5rem; padding: 3rem; max-width: 42rem; width: 100%; position: relative; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);">
+            <button onclick="document.getElementById('exitPopup').style.display='none'" style="position: absolute; top: 1rem; right: 1rem; color: #9ca3af; background: none; border: none; font-size: 2rem; cursor: pointer; transition: color 0.3s;">×</button>
+
+            <div style="text-align: center;">
+                <div style="display: inline-block; background: #ef4444; color: #fff; border-radius: 9999px; padding: 0.5rem 1.5rem; margin-bottom: 1.5rem;" class="pulse-slow">
+                    <p style="font-weight: 700; font-size: 1.125rem;">⚠️ WAIT! One More Thing...</p>
+                </div>
+
+                <h3 style="font-size: 2.5rem; font-weight: 900; margin-bottom: 1.5rem; line-height: 1.1;">
+                    You're About to Miss Out on<br>
+                    <span style="background: linear-gradient(90deg, #fcd34d, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">The Best ₹199 You'll Ever Spend!</span>
+                </h3>
+
+                <p style="font-size: 1.25rem; color: #d1d5db; margin-bottom: 2rem;">
+                    That's less than a coffee - for a complete system that could generate <span style="color: #4ade80; font-weight: 700;">₹50,000+ monthly</span> for your business!
+                </p>
+
+                <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 1rem; padding: 1.5rem; margin-bottom: 2rem;">
+                    <div style="font-size: 3rem; font-weight: 900; color: #fbbf24; margin-bottom: 0.5rem;">₹199</div>
+                    <p style="color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.75rem;">One-time payment • Lifetime access • 60-day guarantee</p>
+                    <p style="color: #fff; font-weight: 700; font-size: 1.125rem;">🎉 97% OFF - This price will NEVER come back!</p>
+                </div>
+
+                <a href="https://pages.razorpay.com/luxaryreels" class="btn-gold" style="font-size: 1.25rem; margin-bottom: 1rem;">
+                    <span>🎁</span>
+                    <span>Get It Now For ₹199!</span>
+                    <span>→</span>
+                </a>
+
+                <p style="font-size: 0.875rem; color: #9ca3af; margin-top: 1rem;">
+                    ✅ Risk-Free • ✅ Instant Access • ✅ Money-Back Guarantee
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown Timer
+        let hours = 4, minutes = 27, seconds = 45;
+        
+        setInterval(function() {
+            seconds--;
+            if (seconds < 0) {
+                seconds = 59;
+                minutes--;
+            }
+            if (minutes < 0) {
+                minutes = 59;
+                hours--;
+            }
+            if (hours < 0) {
+                hours = 0;
+                minutes = 0;
+                seconds = 0;
+            }
+            
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }, 1000);
+
+        // Sticky Bar on Scroll
+        window.addEventListener('scroll', function() {
+            var stickyBar = document.getElementById('stickyBar');
+            if (window.pageYOffset > 800) {
+                stickyBar.style.display = 'block';
+            } else {
+                stickyBar.style.display = 'none';
+            }
+        });
+
+        // Exit Intent Popup
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0) {
+                document.getElementById('exitPopup').style.display = 'flex';
+            }
+        });
+
+        // Mobile: Show popup after 30 seconds
+        if (window.innerWidth < 768) {
+            setTimeout(function() {
+                document.getElementById('exitPopup').style.display = 'flex';
+            }, 30000);
+        }
+    </script>
+
+</body>
+</html>
